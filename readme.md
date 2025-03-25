@@ -25,3 +25,6 @@ docker exec -it ypspur_ros_docker_ros_1 bash
 接続されてるデバイス(修正が必要な場合あり)：
 
 - `/dev/ttyACM0` -> `/dev/ttyACM0`
+
+## 注意事項
+- rosのworkspaceなどdocker上で必要なディレクトリは順次volumeに追記していくこと
