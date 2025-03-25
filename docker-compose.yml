@@ -1,0 +1,11 @@
+version: '3'
+services:
+  ros:
+    build: .
+    tty: true
+    volumes:
+      - $HOME/researches/programs/platform/yp-robot-params/:/root/researches/programs/platform
+      - /etc/localtime:/etc/localtime
+    devices:
+      - /dev/ttyACM0:/dev/ttyACM0
+    command: bash
